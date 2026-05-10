@@ -1,0 +1,23 @@
+{
+  "name": "com.johanjimenez.folder-color",
+  "version": "1.0.0",
+  "displayName": "Folder Color",
+  "description": "Adds a simple Project window context menu to color Unity folders.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Johan Jimenez"
+  },
+  "license": "MIT",
+  "files": [
+    "Editor",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "editor",
+    "folder",
+    "color",
+    "project-window"
+  ]
+}
