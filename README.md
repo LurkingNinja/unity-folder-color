@@ -1,6 +1,10 @@
 # Folder Color
 
-Folder Color is a small editor-only Unity package that lets you color folders directly from the Project window context menu.
+Folder Color is a lightweight Unity Editor tool for color-coding folders in the Project window.
+
+It helps keep large Unity projects easier to scan by letting you assign colors to folders like Scripts, Art, Scenes, UI, Audio, Prefabs, and more directly from the right-click context menu.
+
+![Folder Color context menu](docs/images/folder-color-context-menu.png)
 
 ## Features
 
@@ -36,8 +40,6 @@ https://github.com/JohanJimenex/unity-folder-color.git
 3. Choose a color.
 
 Use `Folder Color > Clear` to remove the color.
-
-![Folder Color context menu](docs/images/folder-color-context-menu.png)
 
 ## Notes
 
