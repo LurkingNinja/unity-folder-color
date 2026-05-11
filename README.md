@@ -37,6 +37,8 @@ https://github.com/JohanJimenex/unity-folder-color.git
 
 Use `Folder Color > Clear` to remove the color.
 
+![Folder Color context menu](docs/images/folder-color-context-menu.png)
+
 ## Notes
 
 Colors are saved using Unity `EditorPrefs`, so they are local to each developer machine and are not committed to your project.
