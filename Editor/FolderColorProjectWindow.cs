@@ -44,6 +44,21 @@ namespace JohanJimenez.FolderColor.Editor
         [MenuItem("Assets/Folder Color/Gray", false, 2006)]
         private static void SetGray() => SetSelectedFoldersColor(new Color(0.48f, 0.52f, 0.58f, 1f));
 
+        [MenuItem("Assets/Folder Color/Pink", false, 2007)]
+        private static void SetPink() => SetSelectedFoldersColor(new Color(0.91f, 0.24f, 0.55f, 1f));
+
+        [MenuItem("Assets/Folder Color/Cyan", false, 2008)]
+        private static void SetCyan() => SetSelectedFoldersColor(new Color(0.08f, 0.78f, 0.91f, 1f));
+
+        [MenuItem("Assets/Folder Color/Teal", false, 2009)]
+        private static void SetTeal() => SetSelectedFoldersColor(new Color(0.08f, 0.72f, 0.65f, 1f));
+
+        [MenuItem("Assets/Folder Color/Brown", false, 2010)]
+        private static void SetBrown() => SetSelectedFoldersColor(new Color(0.60f, 0.35f, 0.16f, 1f));
+
+        [MenuItem("Assets/Folder Color/Black", false, 2011)]
+        private static void SetBlack() => SetSelectedFoldersColor(new Color(0.12f, 0.14f, 0.18f, 1f));
+
         [MenuItem("Assets/Folder Color/Clear", false, 2020)]
         private static void Clear() => ClearSelectedFoldersColor();
 
@@ -54,6 +69,11 @@ namespace JohanJimenez.FolderColor.Editor
         [MenuItem("Assets/Folder Color/Blue", true)]
         [MenuItem("Assets/Folder Color/Purple", true)]
         [MenuItem("Assets/Folder Color/Gray", true)]
+        [MenuItem("Assets/Folder Color/Pink", true)]
+        [MenuItem("Assets/Folder Color/Cyan", true)]
+        [MenuItem("Assets/Folder Color/Teal", true)]
+        [MenuItem("Assets/Folder Color/Brown", true)]
+        [MenuItem("Assets/Folder Color/Black", true)]
         [MenuItem("Assets/Folder Color/Clear", true)]
         private static bool ValidateFolderColorMenu() => GetSelectedFolderPaths().Count > 0;
 
