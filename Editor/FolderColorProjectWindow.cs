@@ -87,11 +87,25 @@ namespace JohanJimenez.FolderColor.Editor
         {
             var folderPaths = new List<string>();
 
+            foreach (string guid in Selection.assetGUIDs)
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+
+                if (!string.IsNullOrEmpty(path) &&
+                    AssetDatabase.IsValidFolder(path) &&
+                    !folderPaths.Contains(path))
+                {
+                    folderPaths.Add(path);
+                }
+            }
+
             foreach (Object selectedObject in Selection.objects)
             {
                 string path = AssetDatabase.GetAssetPath(selectedObject);
 
-                if (!string.IsNullOrEmpty(path) && AssetDatabase.IsValidFolder(path))
+                if (!string.IsNullOrEmpty(path) &&
+                    AssetDatabase.IsValidFolder(path) &&
+                    !folderPaths.Contains(path))
                 {
                     folderPaths.Add(path);
                 }
